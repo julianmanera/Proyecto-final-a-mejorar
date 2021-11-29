@@ -62,7 +62,7 @@
 
     <!--Empiezan las preguntas frecuentes con la respuesta, la idea aca es meter un menu desplegable para que no se vea directamente la respuesta sino que cada usuario elija la pregunta a la que quiere acceder-->
     <section>
-        <h1>Preguntas Frecuentes</h1>
+        <h1 class="h1-FAQ">Preguntas Frecuentes</h1>
             <ul class="lista-preguntas">
                 <li class="FAQs">Pregunta 1</li>
                     <p class="soluciones">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis magni asperiores similique qui omnis tenetur! Consequatur, expedita. Architecto quam atque earum quod necessitatibus, vel provident assumenda at eum sit ut.</p>
@@ -83,47 +83,66 @@
 
 
    <!-- Pie de Pagina -->
-   <footer>
-    <!-- Aca iria un selector de Idiomas -->
-    <form action=""></form>
-    <!-- Debajo del selector de idiomas van los iconos de las redes sociales que redireccionan a las mismas -->
-    <div class="listas-container">
-        <div class="compañia">
-            <ul>
-                <h4>Compañía</h4>
-                <li>Sobre Nosotros</li>
-                <li>Trabajos</li>
-                <li>Marcas</li>
-                <li>Noticias</li>
+<footer>
+  <div class="container">
+      <footer class="py-5">
+        <div class="row listas-container">
+          <div class="col-2">
+            <h5>Compañía<a href="http://" target="_blank" rel="noopener noreferrer"></a></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sobre Nosotros</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Trabajos</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Marcas</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Noticias</a></li>
             </ul>
-        </div>
-        <div class="politicas">
-            <ul>
-                <h4>Políticas</h4>
-                <li>Condiciones</li>
-                <li>Privacidad</li>
-                <li>Directivas</li>
-                <li>Agradecimientos</li>
-                <li>Licencias</li>
-                <li>Moderación</li>
+          </div>
+
+          <div class="col-2">
+              <h5>Políticas</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Condiciones</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacidad</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Directivas</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Agradecimientos</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Licencias</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Moderación</a></li>
+              </ul>
+          </div>
+    
+          <div class="col-2">
+            <h5>Ayuda</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Soporte técnico</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Seguridad</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Opiniones</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Desarrolladores</a></li>
             </ul>
-        </div>
-        <div class="ayuda">
-            <ul>
-                <h4>Ayuda</h4>
-                <li>Soporte técnico</li>
-                <li>Seguridad</li>
-                <li>Blog</li>
-                <li>Opiniones</li>
-                <li>Desarrolladores</li>
-            </ul>
+          </div>
+
+          <div class="col-4 offset-1 newletter">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of whats new and exciting from us.</p>
+              <div class="d-flex w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
         </div>
     
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+          <p class="copyrigth">© 2021 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
     </div>
-    <!-- Aca hay un divisor del footer -->
-    <!-- Va el logo de la aplicacion -->
-    <p class="aplication-name">Aplicación</p>
-    <button class="registerbutton">Registrarse</button>
 </footer>
 
 
