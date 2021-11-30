@@ -58,35 +58,40 @@
 </header>
     <!-- Finaliza la cabecerea -->
 <!--Inicia formulario donde se ponen los datos del usuario y eso se envia al mail de la empresa-->
-    <section>
+<section>
+  <form class="formulario">
 
-        <h1 class="h1-contacto">Contactá con nosotros</h1>
+    <h1 class="contacto-h1">Contactá con nosotros</h1>
+    <h2 class="contacto-h2">¿Necesitás contactar con nosotros? Llena el siguiente formulario y nos comunicaremos con vos</h2>
+    <div class="contacto-container">
 
-        <h2 class="h2-contacto">¿Necesitas ponerte en contacto con nosotros?</h2>
+        <div class="contacto-container">
 
-        <p class="p-contacto">Puedes rellenar nuestro formulario online para enviar un mensaje a nuestro equipo de atención al cliente.
-            Trataremos de responder a tu mensaje en un plazo de 2 días laborables.</p>
+          <input type="text" placeholder="Nombre Completo" class="input input-contacto">
 
-        <form action="mailto:maildeprueba@gmail.com" method="post" enctype="text/plain">
-            
-            Nombre: <input type="text" name="nombre" size="25" maxlength="100"><br><br>
-
-            Apellidos: <input type="text" name="apellidos" size="35" maxlength="100"><br><br>
-
-            Mail: <input type="text" name="mail" size="35" maxlength="100"><br><br>
-
-            Teléfono de contacto: <input type="text" name="telefono-de-contacto" size="35" maxlength="100"><br><br>
-
-            <textarea name="mensaje" id="" cols="100" rows="20">Deje su mensaje.</textarea> <br><br>
-
-            <tr>
-                <input type="submit" value="Enviar consulta"> 
-                <input type="reset" value="Cancelar">
-            </tr>
+        </div>
 
 
-        </form>
-    </section>
+      <div class="contacto-container">
+        <input type="text" placeholder="Correo Electronico" class="input input-contacto">
+      </div>
+
+      <div class="mensaje-container">
+
+        <input type="text" placeholder="Dejá tu mensaje" class="input input-mensaje-contacto">
+
+      </div>
+
+      <div>
+
+        <input type="submit" value="Envia tu mensaje" class="contacto-button">
+
+
+      </div>
+
+    </div>
+  </form>
+</section>
 <!--Finaliza formulario donde se ponen los datos del usuario y eso se envia al mail de la empresa-->
 
 
